@@ -45,10 +45,10 @@ GameManager.prototype.setup = function () {
     this.keepPlaying = previousState.keepPlaying;
   } else {
     this.grid        = new Grid(this.size);
-    this.score       = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    this.score       = 999999999999;
     this.over        = false;
-    this.won         = true;
-    this.keepPlaying = true;
+    this.won         = false;
+    this.keepPlaying = false;
 
     // Add the initial tiles
    this.addStartTiles();
